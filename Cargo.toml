@@ -1,0 +1,17 @@
+[package]
+name = "hybrid_ecs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rayon = "1.8"
+parking_lot = "0.12"
+tracing = "0.1"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+insta = "1.34"
+
+[[bench]]
+name = "ecs_benchmarks"
+harness = false
